@@ -1,0 +1,81 @@
+nodes = [{
+	"tag": "0",
+	"coord": [14.560734110391136, 121.04147315025331],
+	"name": "Estrella Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.553148289743396, 121.01962924003602],
+	"name": "Greenbelt Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.553044443708814, 121.01850271224977],
+	"name": "P2P Bus Terminal Makati - Taguig"
+}, {
+	"tag": 0,
+	"coord": [14.543261928203478, 121.02070748806001],
+	"name": "Magallanes Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.554306169718993, 121.03454768657686],
+	"name": "Buendia Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.54925403000973, 121.0243445634842],
+	"name": "FX Bus Terminal - Arnaiz Ave"
+}, {
+	"tag": 0,
+	"coord": [14.555458851373398, 121.02348089218141],
+	"name": "Bus Stop Makati Avenue"
+}, {
+	"tag": 0,
+	"coord": [14.549113835378185, 121.02771341800691],
+	"name": "Ayala Bus Station"
+}, {
+	"tag": 0,
+	"coord": [14.549041141830472, 121.02597534656526],
+	"name": "P2P Terminal"
+}, {
+	"tag": 0,
+	"coord": [14.542332462837251, 121.01787507534029],
+	"name": "Citylink Bus Station"
+}, {
+	"tag": 0,
+	"coord": [14.554451553322526, 121.02453231811525],
+	"name": "Makati Avenue Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.575349449433167, 121.01717233657838],
+	"name": "Circuit Makati Transport Terminal"
+}, {
+	"tag": 0,
+	"coord": [14.55283155918521, 121.0267210006714],
+	"name": "Regent Bus Station"
+}, {
+	"tag": 0,
+	"coord": [14.549015179843353, 121.02745592594148],
+	"name": "Ayala MRT Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.570604113429184, 121.01873874664308],
+	"name": "Marginal Building Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.551429631584115, 121.02703213691713],
+	"name": "Froelich P2P Bus Terminal"
+}, {
+	"tag": 0,
+	"coord": [14.549139797353702, 121.02834641933443],
+	"name": "MRT 3 Ayala Avenue - Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.557172285948187, 121.06249094009401],
+	"name": "Greenfrog Bus Terminal"
+}, {
+	"tag": 0,
+	"coord": [14.548999602649602, 121.04731500148775],
+	"name": "The Fort Bus Stop"
+}, {
+	"tag": 0,
+	"coord": [14.550360006759274, 121.02513849735261],
+	"name": "P2P Bus Stop Makati - Las Pinas"
+}]

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+h3 {
+	  font-weight: bold;
+	  font-size: 40px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-right: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+</style>
+</head>
+<body>
+<button type="button" class="btn float-right m-2"  onclick="window.location = './home.html';">SKIP <i class="fa fa-plane"></i></button>
+<div class="container-fluid align-middle">
+
+<div class="mySlides">
+	<img id="image" src="./img/your_location.png" class="rounded w-2 img-thumbnail border-0 bg-transparent"><br>
+  <h3>Your Location</h3>
+  <p>Start from displaying your current location, the app will provide the specific places you are in at the moment.</p>
+</div>
+
+<div class="mySlides">
+<img id="image" src="./img/best_route.png" class="rounded w-2 img-thumbnail border-0 bg-transparent"><br>
+  <h3>Best Route</h3>
+  <p>The app will also display the best and most accessible route suggestions where you can choose between the best options for you.</p>
+</div>
+<div class="mySlides">
+<img id="image" src="./img/search_nearby.png" class="rounded w-2 img-thumbnail border-0 bg-transparent"><br>
+  <h3>Nearby Places</h3>
+  <p>You can search nearby or within the specified city. We will display specfic or related shops to match your search.</p>
+</div>
+<div class="mySlides">
+<img id="image" src="./img/sit_back.png" class="rounded w-2 img-thumbnail border-0 bg-transparent"><br>
+  <h3>Set Back and Enjoy</h3>
+  <p>We will handle everything for you. As you have the app in your pocket then you don't have to worry about everything.</p>
+  <button type="button" id="buttonEnd" onclick="window.location = './home.html';" class="btn btn-warning btn-block rounded-0 mt-4"><b>LETS GET STARTED</b></button>
+</div>
+
+
+
+</div>
+
+<div class="dot-container fixed-bottom">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+	if(n==4){
+		$("#buttonEnd").css('opacity', '0');
+		$("#buttonEnd").animate({opacity: 1}, 1000, 'linear');
+	}
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  
+  
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,13 @@
+routes = [{
+	"name": "Bus",
+	"speed": 13,
+	"routes": [{
+		"name": "Bus Route 1",
+		"paths": [0, 1, 2],
+		"stops": [0, 2]
+	}, {
+		"name": "Bus Route 2",
+		"paths": [0, 1, 2],
+		"stops": [0, 2]
+	}]
+}]

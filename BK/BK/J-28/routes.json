@@ -1,0 +1,30 @@
+var routes =  [{
+	"name": "Bus",
+	"speed": 13,
+	"fare": 20,
+	"routes": [
+	{
+		"name": "Bus Route 1",
+		"paths": [0, 4,17,8,14,9,5],
+		"stops": [0, 17, 14, 5]
+	},
+	{
+		"name": "Bus Route 2",
+		"paths": [13,11,6],
+		"stops": [13,6]
+	}
+	]
+},
+{
+	"name": "Jeepney",
+	"speed": 8,
+	"fare": 8,
+	"routes": [
+	{
+		"name": "Jeep Route 1",
+		"paths": [0, 20,21],
+		"stops": [0, 20,21]
+	}
+	]
+}
+]
